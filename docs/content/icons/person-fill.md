@@ -7,4 +7,6 @@ tags:
   - individual
   - avatar
   - user
+  - account
+  - profile
 ---

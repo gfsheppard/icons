@@ -1,13 +1,13 @@
 <p align="center">
-  <a href="https://v5.getbootstrap.com/">
-    <img src="https://v5.getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap logo" width="200" height="165">
+  <a href="https://getbootstrap.com/">
+    <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap logo" width="200" height="165">
   </a>
 </p>
 
 <h3 align="center">Bootstrap Icons</h3>
 
 <p align="center">
-  Official open source SVG icon library for Bootstrap.
+  Official open source SVG icon library for Bootstrap with over 1,900 icons.
   <br>
   <a href="https://icons.getbootstrap.com/"><strong>Explore Bootstrap Icons »</strong></a>
   <br>
@@ -17,13 +17,10 @@
   <a href="https://themes.getbootstrap.com/">Themes</a>
   ·
   <a href="https://blog.getbootstrap.com/">Blog</a>
+  <br>
 </p>
 
-## 1,200+ icons
-
-[![Bootstrap Icons full set](https://github.com/twbs/icons/blob/main/.github/preview.png)](https://icons.getbootstrap.com)
-
-[Also available in Figma.](https://www.figma.com/file/0fjzjlmwMsHJ0Mgj51j444/Bootstrap-Icons-v1.2.2?node-id=0%3A1)
+[![Bootstrap Icons preview](https://github.com/twbs/icons/blob/main/.github/preview.png)](https://icons.getbootstrap.com)
 
 ## Install
 
@@ -32,6 +29,14 @@ Bootstrap Icons are packaged up and published to npm. We only include the proces
 ```shell
 npm i bootstrap-icons
 ```
+
+For those [using Packagist](https://packagist.org/packages/twbs/bootstrap-icons), you can also install Bootstrap Icons via Composer:
+
+```shell
+composer require twbs/bootstrap-icons
+```
+
+[Also available in Figma.](https://www.figma.com/community/file/1042482994486402696/Bootstrap-Icons)
 
 ## Usage
 
@@ -72,10 +77,10 @@ Here are some key scripts you'll use during development. Be sure to look to our 
 
 ## Adding SVGs
 
-Once a new SVG icon has been added to the `icons` directory, you'll need to optimize them. An npm script is used to:
+Icons are typically only added by @mdo, but exceptions can be made. New glyphs are designed in Figma first on a 16x16px grid, then exported as flattened SVGs with `fill` (no stroke). Once a new SVG icon has been added to the `icons` directory, we use an npm script to:
 
 1. Optimize our SVGs with SVGO.
-2. Modify the SVGs source HTML, removing all attributes before setting new attributes and values in our preferred order.
+2. Modify the SVGs source code, removing all attributes before setting new attributes and values in our preferred order.
 
 Use `npm run icons` to run the script, run `npm run pages` to build permalink pages, complete those pages, and, finally, commit the results in a new branch for updating.
 

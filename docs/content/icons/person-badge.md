@@ -10,4 +10,6 @@ tags:
   - badge
   - id
   - card
+  - account
+  - profile
 ---

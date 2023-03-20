@@ -8,4 +8,6 @@ tags:
   - avatar
   - user
   - verified
+  - account
+  - profile
 ---

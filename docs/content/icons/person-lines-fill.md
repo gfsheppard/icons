@@ -9,4 +9,6 @@ tags:
   - user
   - contact
   - list
+  - account
+  - profile
 ---

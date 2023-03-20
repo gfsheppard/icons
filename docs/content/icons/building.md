@@ -1,9 +1,11 @@
 ---
 title: Building
 categories:
-  - People
+  - Buildings
 tags:
   - company
   - enterprise
   - organization
+  - office
+  - business
 ---

@@ -8,4 +8,6 @@ tags:
   - avatar
   - user
   - crop
+  - account
+  - profile
 ---
